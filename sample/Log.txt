@@ -1,0 +1,32 @@
+Buildfile: C:\Users\ypandura\Desktop\CI\salesforce_ant_37.0\sample\build.xml
+
+deployCode:
+[sf:deploy] Request for a deploy submitted successfully.
+[sf:deploy] Request ID for the current deploy task: 0Af2800000MmFqrCAF
+[sf:deploy] Waiting for server to finish processing the request...
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+[sf:deploy] Request Status: Pending
+
+BUILD FAILED
+C:\Users\ypandura\Desktop\CI\salesforce_ant_37.0\sample\build.xml:60: Failed to obtain result from server within specified time of 200sec.
+Execute following command to obtain the results later: ant deployCode -Dsf.asyncRequestId=0Af2800000MmFqrCAF
+
+Total time: 3 minutes 38 seconds
