@@ -1,0 +1,14 @@
+<apex:page controller="secondcontroller" tabStyle="Account">
+     <apex:form >
+         <apex:pageblock title="welcome {! $user.firstname}">
+         
+         <apex:inputField value="{! account.name}"/>
+         
+         <apex:commandButton action="{!save}" value="save"/>
+         
+         
+         </apex:pageblock>
+     
+     
+     </apex:form>
+</apex:page>

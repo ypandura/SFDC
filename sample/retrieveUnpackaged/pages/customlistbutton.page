@@ -1,0 +1,29 @@
+<apex:page standardController="opportunity" recordSetVar="Opportunities" tabStyle="Opportunity" extensions="custlistbut">
+
+    <apex:form >
+        <apex:pageBlock title="Edit Opp closeDate & stage">
+        
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!save}" value="save"/>
+                <apex:commandButton action="{!cancel}" value="cancel"/>
+            
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!selected}" var="Opp">
+            
+                <apex:column value="{!Opp.name}"/>
+                <apex:column headerValue="Stage">
+                    <apex:inputField value="{!Opp.stagename}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="CloseDate">
+                    <apex:inputField value="{!Opp.closedate}"/>
+                    </apex:column>
+            
+            </apex:pageBlockTable>
+        
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+  
+</apex:page>

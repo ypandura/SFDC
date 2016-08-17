@@ -1,0 +1,20 @@
+<apex:page >
+    <apex:pageBlock title="User Info">
+    
+        <apex:pageBlockSection title="First sec">
+        
+        {! $user.firstname & ' ' & $user.lastname}
+        
+        <p> Today's Date is {! TODAY() } </p>
+
+        <p> Next week it will be {! TODAY() + 7 } </p>
+        
+        is it true? {! CONTAINS('salesforce.com','force.com')}
+        
+        Tomorrow will be day number  {! TODAY() + 1 }
+
+        </apex:pageBlockSection>
+    
+    </apex:pageBlock>
+
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page standardController="contact" recordSetVar="CC">
+     <apex:pageBlock title="Clist">
+         <apex:pageBlockTable value="{!CC}" var="C">
+             <apex:column value="{!C.lastname}"/>
+         
+         
+         </apex:pageBlockTable>    
+     </apex:pageBlock>
+</apex:page>

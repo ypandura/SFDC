@@ -1,0 +1,35 @@
+<apex:page standardController="account" >
+ 
+     <apex:form >
+         <apex:pageBlock title="ac edit" >
+         <apex:pagemessages />
+             <apex:pageBlockSection >
+             <apex:inputField value="{!account.name}"/>
+             
+             
+             </apex:pageBlockSection>
+             <apex:pageBlockButtons location="bottom">
+             <apex:commandButton action="{!save}" value="save"  />
+             </apex:pageBlockButtons>
+         </apex:pageBlock>
+         
+                 <apex:pageBlock title="RL">
+                     <apex:pageBlockTable value="{!account.contacts}" var="C">
+                     <apex:column >
+                         <apex:outputLink value="{!URLFOR($Action.Contact.Edit,C.id)}">Edit
+                         
+                         </apex:outputLink>
+                     
+                     </apex:column>
+                     
+                     <apex:column value="{!C.name}"/>
+                     
+                     </apex:pageBlockTable>
+                 
+                 
+                </apex:pageBlock>
+     
+     
+     </apex:form>
+ 
+</apex:page>

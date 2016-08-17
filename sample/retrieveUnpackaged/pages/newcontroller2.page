@@ -1,0 +1,23 @@
+<apex:page controller="Mysecond" tabStyle="Account" extensions="Ex1">
+  <apex:form >
+      <apex:pageBlock mode="edit">
+      
+          <apex:pageMessages />
+          
+              <apex:pageBlockSection >
+                  <apex:inputField value="{!account.name}"/>
+            
+              </apex:pageBlockSection>
+              <apex:pageBlockButtons location="bottom" >
+              
+                  <apex:commandButton action="{!save}" value="save"/>
+              
+              </apex:pageBlockButtons>
+      
+      
+      
+      </apex:pageBlock>
+
+  
+  </apex:form>
+</apex:page>
